@@ -1,1 +1,45 @@
 printf('Hello World!');
+
+
+#include <stdio.h>
+
+int main(){
+
+	//int y = 321;		//declaration + intialization
+	
+	int age = 21;			//integer(only whole number) (-2,147,483,648 to +2,147,483,647) 用%d
+	float gpa = 2.059999;	//floting point number store6-7digit 用%f
+		// %.1f = shows 1 decimal precision exp1.9, so %.2f shows 2 exp1.99
+		// %1 = minimum field width eg%1.7f 空1顯示7 digit
+		// %- = left align eg%-8.2f 空8顯示2digit但有-所以空8在left
+	double d = 3.1234567891011123; //similar with float but stores 15-16 digits, double比較准少用float 用%lf
+	char grade = 'C';		//single character 用%c
+	char name[] = "Bro";	//array of charterS 用%s
+	//const 過後放比如 float/int/double 就是那個之後不能更變
+	
+	//printf("Hello %s\n", name);
+	//printf("I am %d years old\n", age);
+	//printf("My average grade is %c\n", grade);
+	//printf("My gpa is %f\n", gpa);
+	
+	float item1 = 69.99;
+	float item2 = 87.99;
+	float item3 = 67.99;
+	
+	//printf("item1 is $%6.2f\n", item1);
+	//printf("item2 is $%-4.2f\n", item2);
+	//printf("item3 is $%-8.2f", item3);
+	
+	//-----------------------------------------------------
+	
+	int x = 5;
+	int y = 2;
+	
+	float z = x / (float) y;
+	
+	printf("%f",z);
+	
+	return 0;
+
+
+}
